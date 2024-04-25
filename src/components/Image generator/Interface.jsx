@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Interface = () => {
   return (
     <div>
-      <section className="bg-center flex flex-col items-center justify-center bg-gradient-to-b from-pink-200 via-pink-100 to-yellow-50 w-screen h-screen overflow-hidden">
+      <section className="bg-center flex flex-col items-center justify-center bg-gradient-to-b from-pink-200 via-pink-100 to-yellow-50 w-screen h-screen overflow-x-hidden">
         <div className="px-4 flex flex-col items-center justify-center mx-auto max-w-screen-xl text-center py-24 lg:py-56">
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-800 md:text-5xl lg:text-6xl">
             <span className='text-pink-700'>Syntho</span>Vision
