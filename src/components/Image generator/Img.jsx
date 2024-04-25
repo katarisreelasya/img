@@ -53,15 +53,14 @@ const Img = () => {
                 <p className="mb-8 text-lg font-normal text-black lg:text-xl sm:px-16 lg:px-48">Welcome to ImageForge, your one-stop destination for unleashing your creative vision through stunning visuals. Our React-based image generation project empowers you to effortlessly create captivating images for your landing pages, social media, presentations, and more. With a user-friendly interface and a plethora of customization options, ImageForge simplifies the process of designing eye-catching graphics. Whether you're a seasoned designer or just starting your creative journey, our platform provides the tools you need to bring your ideas to life. Say goodbye to generic stock photos and hello to personalized, professional imagery with ImageForge. Explore the endless possibilities and let your imagination run wild with ImageForge today!</p>
                 <div className="w-[80vw] mx-auto flex flex-col items-center justify-center">   
                     <label htmlFor="default-email" className="mb-2 text-sm font-medium text-gray-800 sr-only">Enter Prompt : </label>
-                    <div className="relative mb-8 flex flex-col items-center w-[25vw] justify-center">
+                    <div className="w-[80vw] sm:w-full md:w-full lg:w-full h-auto relative mb-8 flex flex-col items-center w-[25vw] justify-center">
                         <div className="absolute inset-y-0  rtl:inset-x-0 start-0 flex items-center ps-3.5 pointer-events-none">
                             <h6>&#10024;</h6>
                         </div>
-                        <div className="w-[80vw] sm:w-full md:w-full lg:w-full h-auto">
                         <input type="text" ref={inpRef} id="default-text" className="block flex items-center justify-self-end w-[80vw] sm:w-full md:w-full lg:w-full  p-4 ps-10 text-sm text-gray-900 border border-double border-pink-700 rounded-full bg-white placeholder:text-gray-500 " placeholder="Imagine Wonders....." required />
-                        <button onClick={Search} className=" bg-gradient-to-r from-pink-400 to to-yellow-500 hover:bg-blue-800 focus:ring-4 focus:outline-none  rounded-full text-black text-sm font-semibold px-4 py-2 ">Generate</button>
-                         </div>
-                        </div>
+                        <button onClick={Search} className="absolute  bg-gradient-to-r from-pink-400 to to-yellow-500 hover:bg-blue-800 focus:ring-4 focus:outline-none  rounded-full text-black text-sm font-semibold px-4 py-2 ">Generate</button>
+                    </div>
+                    
                     <div className='w-[60vw] h-[30vh] mb-3 border flex flex-col items-center justify-around border-pink-700 rounded-lg py-2 px-3 '>
                     {imageBase64 && <img width={215} height={215} src={`data:image/jpeg;base64,${imageBase64}`} alt="Generated Image" className='rounded-lg' />}
                     </div>
